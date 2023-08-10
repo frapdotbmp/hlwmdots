@@ -1,0 +1,52 @@
+window:
+  opacity: 1
+
+  padding:
+    x: 25
+    y: 25
+
+  dimensions:
+    columns: 40
+    lines: 12
+
+font:
+  normal:
+    family: cozette
+    style: Medium
+
+  bold:
+    family: cozette
+    style: Bold
+  
+  size: 7
+
+colors:
+  primary:
+    background: '#fafafa'
+    foreground: '#0a0a0a'
+  cursor:
+    text:   CellForeground
+    cursor: '#0a0a0a'
+  
+  normal:
+    black:   '#0a0e14'
+    red:     '#ff3333'
+    green:   '#86b300'
+    yellow:  '#ff9940'
+    blue:    '#399ee6'
+    magenta: '#f07171'
+    cyan:    '#55b4d4'
+    white:   '#fafafa'
+
+  bright:
+    black:   '#0a0e14'
+    red:     '#ff3333'
+    green:   '#86b300'
+    yellow:  '#ff9940'
+    blue:    '#399ee6'
+    magenta: '#f07171'
+    cyan:    '#55b4d4'
+    white:   '#fafafa'
+
+cursor:
+  style: Beam
