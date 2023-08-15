@@ -9,7 +9,8 @@ hc() {
 # I have no idea
 hc emit_hook reload
 
-hsetroot -solid '#758a8b'
+hsetroot -fill ~/.wallpapers/wallhaven-eox27o.jpg
+#hsetroot -solid '#758a8b'
 #nitrogen --restore
 
 # uh, self explanatory
@@ -75,19 +76,19 @@ hc set frame_border_normal_color '#00000000'
 hc set frame_bg_normal_color '#00000000'
 hc set frame_bg_active_color '#00000000'
 
-hc attr theme.title_height 0
+hc attr theme.title_height 100
 hc attr theme.title_when always
-#hc attr theme.title_font 'cozette:pixelsize=12'
+hc attr theme.title_font 'Victor Mono:pixelsize=12'
 hc attr theme.title_depth -60
-hc attr theme.active.color '#171717'
-hc attr theme.title_color '#121212'
-hc attr theme.normal.color '#121212'
+hc attr theme.active.color '#181818'
+hc attr theme.title_color '#151515'
+hc attr theme.normal.color '#151515'
 hc attr theme.urgent.color '#7811A1'
-hc attr theme.normal.title_color '#898989'
+hc attr theme.normal.title_color '#fafafa'
 
 # borders
-hc attr theme.border_width 0
-hc attr theme.background_color '#fafafa'
+hc attr theme.border_width 10
+hc attr theme.background_color '#181818'
 
 hc attr theme.floating.window_border_width 10
 

@@ -7,42 +7,42 @@ window:
 
   dimensions:
     columns: 40
-    lines: 12
+    lines: 10
 
 font:
   normal:
-    family: cozette
-    style: Medium
+    family: Victor Mono
+    style: Regular
 
   bold:
-    family: cozette
+    family: Victor Mono
     style: Bold
   
   size: 7
 
 colors:
   primary:
-    background: '#fafafa'
-    foreground: '#0a0a0a'
+    background: '#151515'
+    foreground: '#fafafa'
   cursor:
     text:   CellForeground
-    cursor: '#0a0a0a'
+    cursor: '#fafafa'
   
   normal:
-    black:   '#0a0e14'
-    red:     '#ff3333'
+    black:   '#151515'
+    red:     '#f45a00'
     green:   '#86b300'
-    yellow:  '#ff9940'
+    yellow:  '#f49800'
     blue:    '#399ee6'
     magenta: '#f07171'
     cyan:    '#55b4d4'
     white:   '#fafafa'
 
   bright:
-    black:   '#0a0e14'
-    red:     '#ff3333'
+    black:   '#151515'
+    red:     '#f45a00'
     green:   '#86b300'
-    yellow:  '#ff9940'
+    yellow:  '#f49800'
     blue:    '#399ee6'
     magenta: '#f07171'
     cyan:    '#55b4d4'
