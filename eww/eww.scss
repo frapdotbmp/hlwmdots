@@ -1,0 +1,57 @@
+* {
+    all: unset;
+}
+
+.main {
+    background-color: #131a1c;
+}
+
+.left {
+    padding: 10px;
+    font-family: JetBrainsMono Nerd Font; 
+    font-weight: Bold;
+}
+
+.right {
+    padding: 10px;
+    font-family: JetBrainsMono Nerd Font;
+    font-weight: Bold;
+}
+
+.clock {
+    background-color: #192021;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* battery */
+.bat_prog trough {
+    min-height: 25px;
+    min-width: 100px;
+    background-color: #192021;
+    border-radius: 4px;
+}
+
+.bat_prog trough highlight {
+    background-color: #b1e3ad;
+    border-radius: 4px;
+}
+
+.bat_icon {
+    color: #192021;
+}
+
+/* */
+
+.haskell_logo {
+    background-image: url("assets/haskell.png");
+    background-repeat: no-repeat;
+	background-size: 2.2rem;
+	background-position: center center;
+    min-height: 2rem;
+    min-width: 3rem;
+    border-radius: 10px;
+    border: solid #303030;
+    border-width: 1px;
+}
+

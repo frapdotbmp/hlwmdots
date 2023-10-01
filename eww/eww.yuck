@@ -1,0 +1,65 @@
+
+(defpoll time :interval "10s"
+    "date '+%I:%M%P'")
+
+(defpoll battery :interval "1s"
+    "./scripts/battery --bat")
+
+(defwidget clock []
+    (box :orientation "h" :class "clock_box"
+        (label :markup "<span color='#ebddaa'> </span>${time}")))
+
+(defwidget sep []
+    (label :hexpand false :vexpand false :text "│"))
+
+(defwidget bat []
+    (box :orientation "h" :class "bat_box" :valign "center"
+        (overlay
+            (scale  :value battery
+                    :orientation "h"
+                    :class "bat_prog"
+                    :active false
+                    :tooltip "BAT0: ${battery}%")
+
+            (label  :markup "<span font_size='large' color='#192021'>󱐋</span>"
+                    :wrap true))))
+
+
+
+(defwidget left []
+    (box :class "left" :space-evenly false :spacing 3 :halign "start" :hexpand false
+        (box :orientation "h" :class "haskell_logo" :halign "start"
+            (button :class "test"
+                    :onclick "dunstify haskell"))
+        (sep)
+        (box :orientation "h" :class "clock" :halign "start"
+            (clock))))
+
+(defwidget right []
+    (box :class "right" :space-evenly false :spacing 15 :halign "end" :hexpand false
+        (bat)))
+
+(defwidget bar []
+    (box :class "bar_widget" :orientation "h" :space-evenly false
+        (left)
+        (box :hexpand true)
+        (right)))
+
+(defwindow main
+    :monitor 0
+    :geometry (
+        geometry
+        :x "10px"
+        :y "-10px"
+        :width "35%"
+        :height "50px"
+        :anchor "bottom center")
+
+    :stacking "fg"
+    :reserve (
+        struts
+        :distance "64px"
+        :side "bottom")
+
+    :wm-ignore false
+    (bar))
